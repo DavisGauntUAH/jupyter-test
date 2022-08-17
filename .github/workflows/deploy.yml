@@ -21,7 +21,7 @@ jobs:
       - name: Install the dependencies
         run: |
           python -m pip install -r requirements.txt
-          python -m pip --no-binary cartopy
+          python -m pip cartopy --no-binary all
       - name: Build the JupyterLite site
         run: |
           cp README.md content
