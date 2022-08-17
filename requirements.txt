@@ -22,5 +22,5 @@ matplotlib==3.5.3
 numpy==1.23.2
 pyproj
 GOES
-netCDF4==1.6.0
+netCDF4
 theme-darcula
