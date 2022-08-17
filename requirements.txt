@@ -22,4 +22,5 @@ matplotlib==3.5.3
 numpy==1.23.2
 netCDF4==1.6.0
 cartopy==0.20.3
+GOES
 theme-darcula
