@@ -22,5 +22,4 @@ matplotlib==3.5.3
 numpy==1.23.2
 pyproj
 h5py
-GDAL
 theme-darcula
