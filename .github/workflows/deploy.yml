@@ -21,6 +21,7 @@ jobs:
       - name: Install the dependencies
         run: |
           conda init bash
+          bash
           conda activate
           sudo add-apt-repository ppa:ubuntugis/ppa
           sudo apt-get update
