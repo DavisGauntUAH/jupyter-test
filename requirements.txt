@@ -20,6 +20,6 @@ jupyterlite-xeus-sqlite==0.2.1
 plotly>=5,<6
 matplotlib==3.5.3
 numpy==1.23.2
-osgeo
+GDAL
 pyproj
 theme-darcula
