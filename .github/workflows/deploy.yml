@@ -20,9 +20,8 @@ jobs:
           python-version: 3.8
       - name: Install the dependencies
         run: |
-          conda init bash
-          bash
-          conda activate
+          cd ~
+          pwd
           sudo add-apt-repository ppa:ubuntugis/ppa
           sudo apt-get update
           sudo apt-get install gdal-bin
