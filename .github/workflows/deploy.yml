@@ -20,9 +20,6 @@ jobs:
           python-version: 3.8
       - name: Install the dependencies
         run: |
-          cd ~
-          pwd
-          ls
           sudo add-apt-repository ppa:ubuntugis/ppa
           sudo apt-get update
           sudo apt-get install gdal-bin
@@ -33,6 +30,8 @@ jobs:
           conda update -n base -c defaults conda
           conda install -c conda-forge gdal
           conda install -c conda-forge h5py
+          cd /
+          find -name '*gdal*' 2>/dev/null
       - name: Build the JupyterLite site
         run: |
           cp README.md content
