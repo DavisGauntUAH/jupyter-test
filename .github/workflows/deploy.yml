@@ -30,8 +30,9 @@ jobs:
           conda update -n base -c defaults conda
           conda install -c conda-forge gdal
           conda install -c conda-forge h5py
-          ls -la ~/
-          export PATH="/usr/share/miniconda:$PATH"
+          echo "export PATH='/usr/share/miniconda:$PATH'" >> ~/.bashrc
+          echo "export PATH='/usr/share/miniconda:$PATH'" >> ~/.bash_profile
+          cat ~/.bashrc
       - name: Build the JupyterLite site
         run: |
           cp README.md content
