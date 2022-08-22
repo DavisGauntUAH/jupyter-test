@@ -30,8 +30,8 @@ jobs:
           conda update -n base -c defaults conda
           conda install -c conda-forge gdal
           conda install -c conda-forge h5py
-          cd /
-          find -name '*gdal*' 2>/dev/null
+          ls -la ~/
+          export PATH="/usr/share/miniconda:$PATH"
       - name: Build the JupyterLite site
         run: |
           cp README.md content
