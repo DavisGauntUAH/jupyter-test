@@ -20,19 +20,7 @@ jobs:
           python-version: 3.8
       - name: Install the dependencies
         run: |
-          sudo add-apt-repository ppa:ubuntugis/ppa
-          sudo apt-get update
-          sudo apt-get install gdal-bin
-          sudo apt-get install libgdal-dev
-          export CPLUS_INCLUDE_PATH=/usr/include/gdal
-          export C_INCLUDE_PATH=/usr/include/gdal
           python -m pip install -r requirements.txt
-          conda update -n base -c defaults conda
-          conda install -c conda-forge gdal
-          conda install -c conda-forge h5py
-          echo "export PATH='/usr/share/miniconda:$PATH'" >> ~/.bashrc
-          echo "export PATH='/usr/share/miniconda:$PATH'" >> ~/.bash_profile
-          cat ~/.bashrc
       - name: Build the JupyterLite site
         run: |
           cp README.md content
